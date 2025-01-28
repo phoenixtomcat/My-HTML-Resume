@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Data Analytics Projects</title>
+    </head>
+    <a href="../index.html">Back to Home 🏠</a><br>
+<body>
+        <h1>Ramtin's Data Analytics Projects</h1>
+        <hr/>
+        <ul>
+            <h3>Bike Sales Excel Dashboard - Mississauga, ON</h3>
+            <li>Designed an interactive Excel dashboard to analyze bike sales trends using cleaned demographic data.</li>
+            <li>Performed data cleaning, including duplicate removal, formatting categorical variables (e.g., marital status, gender), and creating calculated fields like age brackets for improved analysis.</li>
+            <li>Built pivot tables to explore relationships between variables, such as income, commuting distance, and bike purchase decisions.</li>
+            <li>Developed interactive visualizations, including bar, line, and pie charts, to present key metrics such as customer demographics, purchasing behavior, and income distribution.</li>
+            <li>Integrated slicers for dynamic filtering by marital status, region, and education level, enabling detailed exploration of customer trends.</li>
+            <li>Delivered a visually appealing and user-friendly dashboard with a consistent layout and clear visual hierarchy to support data-driven insights.</li>
+            <li>Demonstrated proficiency in Excel for data cleaning, analysis, and dashboard creation to support decision-making.</li>
+
+    
+            <h3>Cleaning & Standardizing Customer Data with Pandas - Mississauga, ON</h3>
+            <li>Utilized Pandas to clean and standardize a dataset with 1,020 customer records, ensuring consistency and usability.</li>
+            <li>Removed duplicate rows using drop_duplicates() to eliminate redundant data entries.</li>
+            <li>Dropped irrelevant columns such as Not Useful to focus on actionable insights.</li>
+            <li>Standardized inconsistent Last Name entries by removing unwanted characters (slashes, dots, underscores) using .str.replace().</li>
+            <li>Formatted and cleaned Phone Number column by removing non-numeric characters with regex and applying a consistent 123-456-7890 format.</li>
+            <li>Split Address column into Street Address, State, and Zip Code for improved data clarity and usability.</li>
+            <li>Standardized categorical columns like Paying Customer and Do Not Contact to uniform values ("Yes"/"No").</li>
+            <li>Removed rows with Do Not Contact = "Yes" or blank Phone Number values to ensure data relevance.</li>
+            <li>Replaced all missing values with blank strings using fillna() for consistent handling of null entries.</li>
+            <li>Reset the DataFrame’s index using reset_index() to maintain clean row references after transformations.</li>
+
+    
+            <h3>E.D.A. with MySQL- Mississauga, ON</h3>
+            <li>Conducted EDA on global layoff data (2020-2023) to identify trends across industries, companies, and countries.</li>
+            <li>Used SQL to analyze data by grouping dimensions (year, company, industry) and calculating rolling totals with window functions.</li>
+            <li>Performed ranking using dense rank and CTEs to highlight companies with the highest layoffs per year.</li>
+            <li>Extracted and transformed date components for time-series analysis to track layoff progression monthly and yearly.</li>
+            <li>Uncovered insights such as COVID-19's impact on industries like retail and transportation, and large-scale layoffs by Amazon, Google, and Meta.</li>
+            <li>Improved data visualization by implementing advanced queries to summarize and rank data.</li>
+            <li>Delivered actionable insights for workforce planning and industry analysis.</li>
+            
+    
+            <h3>Highest Earning Companies in the USA - Web Scraping - Mississauga, ON</h3>
+            <li>Developed a web scraping project to extract and structure data from a Wikipedia page using BeautifulSoup, Requests, and Pandas libraries.</li>
+            <li>Targeted the "List of largest companies in the United States by revenue" table, containing data such as company name, rank, industry, revenue, and more.</li>
+            <li>Utilized BeautifulSoup to parse the HTML structure of the web page and identify the desired table through class-based filtering and indexing, resolving issues caused by multiple tables.</li>
+            <li>Extracted table headers (rank, name, industry, etc.) using the th tags and cleaned the data with Python's .strip() method for consistent formatting.</li>
+            <li>Parsed rows of data (tr; tags) and their respective columns (td tags) to create structured lists, ensuring accurate alignment of data elements.</li>
+            <li>Constructed a Pandas DataFrame to organize the extracted data efficiently, facilitating further analysis or manipulation.</li>
+            <li>Exported the structured data to a CSV file using pandas.to_csv() for easy integration into external tools or dashboards.</li>
+            <li>Implemented error handling and debugged issues related to inconsistent tags and empty rows, ensuring a smooth and reliable data extraction process.</li>
+            <li>Demonstrated how to automate repetitive data collection tasks, showcasing proficiency in web scraping and data engineering principles.</li>
+            <li>Encouraged scalability by leaving the solution adaptable for other web tables or similar datasets.</li>
+            
+    
+            <h3>Survey Analysis and Dashboard in Power BI- Mississauga, ON</h3>
+            <li>Designed an interactive Power BI dashboard using real survey data from 630 data professionals to analyze industry trends and demographics.</li>
+            <li>Cleaned and transformed raw survey data in Power Query, including handling text inconsistencies, splitting columns, standardizing fields like job titles and programming languages, and calculating average salaries from provided ranges.</li>
+            <li>Developed multiple visualizations to highlight key insights, including:</li>
+            <ul>
+              <li>Clustered bar chart: Displaying average salary by job title, revealing data scientists as the highest earners with $93,000 on average.</li>
+              <li>Tree map: Visualizing country-wise survey participation, with breakdowns for regions such as the United States and India.</li>
+              <li>Gauge charts: Displaying average satisfaction scores for work-life balance (5.74) and salary satisfaction (4.23) on a scale of 0–10.</li>
+              <li>Donut chart: Comparing average salaries by gender, showing similar earnings for males and females.</li>
+              <li>Column chart: Highlighting favorite programming languages, with Python leading by a significant margin.</li>
+              <li>Stacked bar chart: Breaking down job titles and average salaries by programming language preferences.</li>
+            </ul>
+            <li>Implemented interactive filters for exploring data by demographics such as country, gender, and programming language, allowing deeper insights.</li>
+            <li>Customized the dashboard layout with themes, color schemes, and formatting to improve usability and aesthetics.</li>
+            <li>Demonstrated proficiency in Power BI for data transformation, visualization, and storytelling, delivering actionable insights for decision-making.</li>
+            
+    
+            <h3>Web Scraping on Amazon (Tim Horton's Coffee) - Mississauga, ON</h3>
+            <li>Built a Python-based web scraper to extract Amazon product details, including titles, prices, and timestamps.</li>
+            <li>Used Beautiful Soup and Requests libraries to fetch and parse HTML content from static product pages.</li>
+            <li>Identified specific HTML elements (id="product-title" and id="price-block_ourprice") to extract key product data.</li>
+            <li>Cleaned and formatted scraped data by removing whitespace and special characters for usability.</li>
+            <li>Created a CSV file to store product details, including headers for Title, Price, and Date.</li>
+            <li>Automated data collection with a while loop and time.sleep() to append new data entries at regular intervals.</li>
+            <li>Included an optional email alert feature using smtplib to notify users of price drops below a set threshold.</li>
+            <li>Validated and structured the data for downstream analysis, enabling time-series tracking of price changes.</li>
+            <li>Designed the script to run continuously in the background for long-term data collection.</li>
+            <li>Highlighted the project as an introduction to web scraping, with potential for scaling to scrape multiple pages or complex datasets.</li>
+
+    
+            <h3>World Layoffs Data Cleaning- Mississauga, ON</h3>
+            <li>Imported and structured a raw dataset of 2,361 records, addressing issues such as duplicates, inconsistent data formats, and null values.</li>
+            <li>Identified and removed duplicates using advanced SQL techniques, ensuring data integrity by partitioning and filtering based on unique attributes.</li>
+            <li>Standardized inconsistent data, including correcting misspellings, trimming white spaces, and normalizing industry categories (e.g., merging "Crypto" and "Cryptocurrency").</li>
+            <li>Addressed null and blank values through self-joins, updating incomplete records with relevant data from existing rows.</li>
+            <li>Converted textual date formats to proper date data types, enabling seamless time-series analysis.</li>
+            <li>Established a raw and staging table workflow to preserve original data integrity while allowing iterative transformations on staging tables.</li>
+            <li>Removed irrelevant rows and redundant columns to optimize storage and performance for downstream analysis.</li>
+            
+            
+            <h3>World Population Almanac EDA - Mississauga, ON</h3>
+            <li>Conducted an Exploratory Data Analysis on a world population dataset with over 230 rows and multiple columns, identifying patterns, relationships, and outliers.</li>
+            <li>Reviewed dataset structure using info() and describe() to gain high-level insights, such as column types, null values, and basic statistical summaries (mean, standard deviation, percentiles).</li>
+            <li>Identified missing values using isnull().sum() and quantified the extent of data gaps for better cleaning decisions.</li>
+            <li>Determined unique values in categorical columns like Continent and Country using nunique() to validate dataset consistency.</li>
+            <li>Sorted data based on key columns (e.g., population) using sort_values() to rank countries by specific metrics like highest population or growth.</li>
+            <li>Computed correlations between numeric columns using corr() and visualized the results via heatmaps with Seaborn's heatmap() to uncover relationships between variables.</li>
+            <li>Grouped data by continents using groupby() and calculated average population, growth rates, and densities for comparative analysis.</li>
+            <li>Transposed datasets to reorganize columns and rows for better visualization of trends across decades using .transpose().</li>
+            <li>Created box plots with boxplot() to detect outliers and visualize the distribution of population values and other metrics.</li>
+            <li>Filtered columns by data type (e.g., numeric, object) using select_dtypes() to streamline targeted analyses on specific column types.</li>
+            
+
+            <h3>Popular Baby Names (AWS Glue & Glue DataBrew) - Mississauga, ON</h3>
+            <li>Created a sample project in DataBrew dataset to demonstrate data filtering, grouping, and sorting.</li>
+            <li>Developed reusable recipes in DataBrew to apply consistent transformations across similar datasets.</li>
+            <li>Automated ETL workflows by scheduling jobs to process full datasets and save outputs in Amazon S3.</li>
+            <li>Discussed integration of IAM roles to manage Glue permissions for accessing S3 buckets and performing ETL operations.</li>
+            <li>Configured AWS Glue Crawlers to automate data cataloging by extracting schema information from S3 datasets.</li>
+            <li>Created and executed visual ETL jobs in AWS Glue Studio to transform and merge datasets using operations like union, aggregation, and schema modification.</li>
+            <li>Explored options for output file formats, including CSV and Parquet, and optimized compression for large-scale ETL operations.</li>
+            <li>Highlighted error resolution and permission adjustments when using Glue roles, ensuring seamless ETL execution.</li>
+            <li>Emphasized real-world use cases of Glue and DataBrew for production environments, enabling scalable, automated data ingestion and transformation pipelines.</li>
+        </ul>
+        <a href="../index.html">Back to Home 🏠</a><br><a href="./pages/contact.html">Contact Information 📞</a><br>
+</body>
+</html>
