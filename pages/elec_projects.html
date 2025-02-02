@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="../style.css">
+<header>
+    <nav>
+        <a href="../index.html" class="button">Home 🏠</a>
+        <a href="https://github.com/phoenixtomcat?tab=repositories" class="button">My Github Repos 👨‍💻</a>
+        <a href="../assets/files/resume.pdf" class="button">My Resume 📄</a>
+        <a href="../pages/contact.html" class="button"> Contact Information 📞</a>
+    </nav>
+    <br>
+</header>
     <head>
-        <title>Engineering Projects</title>
+        <title>E.S.E. Projects</title>
     </head>
 
 <body>
         <h1>Ramtin's Electronics Systems Engineering Projects</h1>
         <hr/>
-        <p style="font-size: 50px">🚧 Under Construction 🚧</p>
+        <ul>
+            <h3>Remote Elevator Project</h3>
+            <li>Designed and implemented an elevator control system capable of changing floors by command, both locally and remotely via a custom-built website.</li>
+            <li>Developed a Full-Stack web application to remotely control the elevator, utilizing C++, Python, PHP, SQL, HTML, CSS, and JavaScript for seamless interaction.</li>
+            <li>Deployed and configured a Raspberry Pi 3 server, integrating the website into the Pi server using XAMPP, enabling real-time elevator control.</li>
+            <li>Programmed STM32 nodes to implement the CAN 2.0A (CSMA-BA) protocol, ensuring reliable and low-latency communication between networked elevator components.</li>
+            <li>Logged design, testing, and operational records on the project website, maintaining comprehensive documentation for system monitoring and debugging.</li>
+            <li>Facilitated project management by recording, transcribing, and distributing meeting minutes, ensuring alignment among team members and stakeholders.</li>
 
+
+            <h3>Embedded Systems Software</h3>
+            <li>Integrated the custom PCB with a robot chassis, enabling real-time communication between microcontroller modules.</li>
+            <li>Designed and implemented a wireless receiver system to control the robot using an Xbox controller via Wi-Fi.</li>
+            <li>Programmed the STM32F3 microcontroller using Embedded C in Keil uVision 5, optimizing performance for low-latency control.</li>
+            <li>Developed Linux-based software for robot control, utilizing a VirtualBox VM and Linux terminal with RS-232 communication protocol.</li>
+            <li>Configured PuTTY for serial communication testing and debugging between the host computer and the embedded system.</li>
+            <li>Integrated xboxdrv to parse controller inputs and JSTEST on Linux for controller calibration, ensuring precise motion control.</li>
+            <li>Utilized Agile project management methodologies, including weekly scrums, Trello for bug tracking, and detailed log book documentation.</li>
+
+
+            <h3>Embedded Systems Design and Hardware Development</h3>
+            <li>Designed and validated a custom PCB using Altium Designer 19 to integrate an STM32F303 "Nucleo" microcontroller with six modular components, including CAN bus, RS-232, DC/RC/Stepper motor interfaces, LCD screen, SPI, encoder optics, and power diagnostics.</li>
+            <li>Developed a hierarchical circuit design architecture, ensuring modularity and scalability for future robot integration.</li>
+            <li>Conducted thermal PCB calculations and power budgeting, optimizing heat dissipation and power efficiency.</li>
+            <li>Ensured signal integrity by implementing proper trace routing, impedance control, and ground plane optimization.</li>
+            <li>Designed and tested ADC and DAC communication over SPI, validating precision and signal stability.</li>
+            <li>Performed power-up sequence verification and end-to-end integration testing to ensure seamless communication between components.</li>
+            <li>Followed manufacturing PCB standards, preparing Gerber files and BOMs before sending the design for fabrication by a Canadian vendor.</li>
+            <li>Assembled and soldered X+ components, troubleshooting and validating circuit functionality through rigorous signal testing.</li>
+
+
+            <h3>Coded Messaging System</h3>
+            <li>Designed and implemented a C-based messaging system enabling real-time communication between a sending and receiving computer via RS-232 using a DB-9 connector.</li>
+            <li>Developed and integrated audio recording, text-based messaging, and data compression algorithms, optimizing transmission efficiency.</li>
+            <li>Engineered an FSK (Frequency Shift Keying) Modulator and Demodulator for signal transmission and reception, assembling and debugging it on a breadboard.</li>
+            <li>Performed FSK modem testing using a Tektronix MSO2024B Mixed Signal Oscilloscope, ensuring signal integrity during data transmission.</li>
+            <li>Simulated and tested modem behavior with a Tektronix AFG2021 AC generator before integrating it into the final system.</li>
+            <li>Implemented RS-232 serial communication, configuring baud rate, parity, and flow control to establish reliable data transfer between devices.</li>
+            <li>Developed priority queue-based message handling on the receiving end, ensuring efficient message retrieval and playback.</li>
+            <li>Designed a user interface (UI) menu system for both the transmitting and receiving devices, improving usability and interaction.</li>
+            <li>Utilized C programming, data structures, and algorithms to optimize message encoding, transmission, and retrieval processes.</li>
+            <li>Conducted hardware debugging and power management testing using a GW Instek GPD 4303S DC power supply, ensuring stable system operation.</li>
+            <li>Engaged in technical briefing and debriefing with instructors and supervisors, reporting on project progress, deliverables, and troubleshooting challenges.</li>
+
+
+            <h3>Mono Audio Amplifier</h3>
+            <li>Designed and implemented a Mono Audio Amplifier powered by a 110V RMS transformer, incorporating a custom-manufactured power supply PCB with a bridge rectifier.</li>
+            <li>Developed and tested voltage, current, and differential amplifier stages, optimizing signal amplification and minimizing distortion.</li>
+            <li>Simulated amplifier circuit behavior using MultiSim, ensuring proper voltage gain and impedance matching before hardware prototyping.</li>
+            <li>Fabricated the power supply PCB, performing drilling, milling, and shearing for precise component placement.</li>
+            <li>Integrated and mounted Darlington Pair transistors onto a heatsink for efficient thermal dissipation and performance stability.</li>
+            <li>Conducted oscilloscope testing (Tektronix MSO 2024B) across multiple channels, verifying waveform integrity and amplifier response.</li>
+            <li>Utilized AC function generator (Tektronix AFG2021) and DC power generator (GW Instek GPD-4303S) to test circuit behavior under varying input conditions.</li>
+            <li>Verified 110V RMS operation, performing multimeter testing on AC wall plug wiring (hot, neutral, ground) and ensuring compliance with electrical safety standards.</li>
+            <li>Performed transformer testing and fuse integration, safeguarding circuit components against overcurrent and voltage spikes.</li>
+            <li>Assembled and soldered X+ components, ensuring continuity and proper power delivery across all amplifier stages.</li>
+
+
+            <h3>Rolling LED Display</h3>
+            <li>Designed and implemented a rolling LED display capable of displaying all letters, numbers, custom phrases, and characters from right to left.</li>
+            <li>Developed the display logic using C programming within CodeWarrior IDE, optimizing character rendering for smooth scrolling.</li>
+            <li>Integrated and programmed the Axium HCS12 microcontroller, configuring GPIO pins for efficient LED matrix control.</li>
+            <li>Simulated circuit behavior in MultiSim to validate signal integrity before hardware implementation.</li>
+            <li>Assembled and soldered X+ components to ensure stable electrical connections and proper LED matrix functionality.</li>
+            <li>Debugged and tested microcontroller firmware, achieving real-time scrolling with minimal latency.</li>
+
+
+            <h3>MultiMeter</h3>
+            <li>Designed and implemented a fully functional multimeter capable of measuring resistance, voltage, current, and magnetic fields using a DC power supply and a D’Arsonval Meter.</li>
+            <li>Developed and simulated circuit designs for individual measurement functions (ohmmeter, voltmeter, ammeter, teslameter) using MultiSim, ensuring circuit accuracy before prototyping.</li>
+            <li>Designed a custom PCB using Ultiboard, optimizing layout for minimal signal interference and efficient component placement.</li>
+            <li>Milled the PCB onto a copper board using ISOPRO, achieving a functional prototype with precise circuit traces.</li>
+            <li>Assembled and soldered X+ components onto the PCB, ensuring electrical continuity and minimizing soldering defects.</li>
+            <li>Conducted comprehensive testing of the assembled board, verifying continuity, sensor accuracy, and multimeter functionality with a ±X% measurement precision.</li>
+            <li>Integrated and tested a Hall Effect sensor for magnetic field detection, calibrating sensitivity to ensure accurate field strength readings.</li>
+            <li>Programmed embedded logic in C to facilitate sensor data processing and output display, optimizing measurement response time.</li>
+            <hr>
+        </ul>
 </body>
+<footer>
+    <p>All Rights Reserved © 2025 Ramtin Alikhani</p>
+</footer>
 </html>
